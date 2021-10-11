@@ -31,6 +31,7 @@ Add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
+
         'django.contrib.sites',
 
         'rest_framework',
@@ -46,8 +47,29 @@ Add it to your `INSTALLED_APPS`:
         'django_filters',
 
         'treebeard',
+
         ...
     )
+
+Setup settings.py:
+
+.. code-block:: python
+
+    MIDDLEWARE = [
+        ...
+
+        'django.contrib.auth.middleware.AuthenticationMiddleware',  # required by django-sso-app
+        'django_sso_app.core.authentication.middleware.DjangoSsoAppAuthenticationMiddleware',  # django-sso-app
+
+        ...
+    ]
+
+    ...
+
+    LOGIN_URL = '/login/'
+    LOGIN_REDIRECT_URL = '/'
+
+    SITE_ID = 1
 
 Add Django SSO App's URL patterns:
 
