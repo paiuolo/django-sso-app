@@ -42,7 +42,6 @@ INSTALLED_APPS = [
 
     'tests',
 
-
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -92,7 +91,6 @@ TEMPLATES = [
         },
     },
 ]
-print('TEMPLATES', TEMPLATES)
 
 WSGI_APPLICATION = 'tests.wsgi.application'
 

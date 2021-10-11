@@ -6,7 +6,7 @@ from django.urls import reverse
 
 from django_sso_app.core.apps.users.models import DjangoSsoAppUserModelMixin
 
-logger = logging.getLogger('django_sso_app.backend.users')
+logger = logging.getLogger('tests')
 
 
 class User(AbstractUser, DjangoSsoAppUserModelMixin):
@@ -14,6 +14,3 @@ class User(AbstractUser, DjangoSsoAppUserModelMixin):
     class Meta:
         verbose_name = _('user')
         verbose_name_plural = _('users')
-
-    def get_relative_url(self):
-        return reverse("users:detail", kwargs={"username": self.username})
