@@ -1,0 +1,698 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-01 16:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/base/js/chunk-vendors.940877fb.js:7
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "Profile"
+msgstr "Profilo"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/base/js/chunk-vendors.940877fb.js:7
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Logout"
+msgstr "Uscita"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Checking browser.."
+msgstr "Check del browser.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Reload"
+msgstr "Ricarica"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Fetching backend stats.."
+msgstr "Contatto il server.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Checking availability.."
+msgstr "Controllo disponibilità.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+msgid "This account is inactive."
+msgstr "Questo account è disattivato."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Fetching user object.."
+msgstr "Recupero utente.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Fetching services.."
+msgstr "Recupero servizi.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Instructions"
+msgstr "Istruzioni"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+msgid "Choose service"
+msgstr "Scegli un servizio."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+msgid "Accept TOS (if required)"
+msgstr "Accetta i termini di servizio (se richieso)"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+msgid "Help"
+msgstr "Aiuto"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+msgid "Checking service.."
+msgstr "Controllo servizio.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Accept"
+msgstr "Accetta"
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+msgid "Clink ACCEPT to accept terms of service."
+msgstr "Clicca ACCETTA per accettare i termini del servizio."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+msgid "Subscribing.."
+msgstr "Iscrizione.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Sending events.."
+msgstr "Invio eventi.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+msgid "Redirecting.."
+msgstr "Reindirizzamento.."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "This browser is not supported."
+msgstr "Questo browser non è supportato."
+
+#: django_sso_app_qcumber_frontend/static/base/js/app.01711461.js:1
+msgid "Base"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/base/js/chunk-vendors.940877fb.js:142
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:119
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:119
+#: django_sso_app_qcumber_frontend/static/logout/js/chunk-vendors.4df02509.js:142
+#: django_sso_app_qcumber_frontend/static/password-change/js/chunk-vendors.d80eb409.js:119
+#: django_sso_app_qcumber_frontend/static/password-reset/js/chunk-vendors.e79d1ec6.js:119
+#: django_sso_app_qcumber_frontend/static/password-set/js/chunk-vendors.293572e1.js:119
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/chunk-vendors.aaa68d4c.js:119
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:119
+#: django_sso_app_qcumber_frontend/static/signup/js/chunk-vendors.42a2a731.js:119
+msgid "Back"
+msgstr "Indietro"
+
+#: django_sso_app_qcumber_frontend/static/base/js/chunk-vendors.940877fb.js:142
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:119
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:119
+#: django_sso_app_qcumber_frontend/static/logout/js/chunk-vendors.4df02509.js:142
+#: django_sso_app_qcumber_frontend/static/password-change/js/chunk-vendors.d80eb409.js:119
+#: django_sso_app_qcumber_frontend/static/password-reset/js/chunk-vendors.e79d1ec6.js:119
+#: django_sso_app_qcumber_frontend/static/password-set/js/chunk-vendors.293572e1.js:119
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/chunk-vendors.aaa68d4c.js:119
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:119
+#: django_sso_app_qcumber_frontend/static/signup/js/chunk-vendors.42a2a731.js:119
+msgid "Continue"
+msgstr "Continua"
+
+#: django_sso_app_qcumber_frontend/static/base/js/chunk-vendors.940877fb.js:147
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:207
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:207
+#: django_sso_app_qcumber_frontend/static/logout/js/chunk-vendors.4df02509.js:7
+#: django_sso_app_qcumber_frontend/static/password-change/js/chunk-vendors.d80eb409.js:207
+#: django_sso_app_qcumber_frontend/static/password-reset/js/chunk-vendors.e79d1ec6.js:207
+#: django_sso_app_qcumber_frontend/static/password-set/js/chunk-vendors.293572e1.js:207
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/chunk-vendors.aaa68d4c.js:207
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+#: django_sso_app_qcumber_frontend/static/signup/js/chunk-vendors.42a2a731.js:207
+msgid "Something happened in setting up the request that triggered an Error. Please contact support."
+msgstr "Ci sono stati problemi nell'esecuzione della richiesta. Si prega di contattare il supporto."
+
+#: django_sso_app_qcumber_frontend/static/base/js/chunk-vendors.940877fb.js:147
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:207
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:207
+#: django_sso_app_qcumber_frontend/static/logout/js/chunk-vendors.4df02509.js:7
+#: django_sso_app_qcumber_frontend/static/password-change/js/chunk-vendors.d80eb409.js:207
+#: django_sso_app_qcumber_frontend/static/password-reset/js/chunk-vendors.e79d1ec6.js:207
+#: django_sso_app_qcumber_frontend/static/password-set/js/chunk-vendors.293572e1.js:207
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/chunk-vendors.aaa68d4c.js:207
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+#: django_sso_app_qcumber_frontend/static/signup/js/chunk-vendors.42a2a731.js:207
+msgid "Server is unreacheable, please check your connection or try later."
+msgstr "Il server non è raggiungibile, si prega di controllare la connessione o provare più tardi."
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Confirmation e-mail sent. Please check your inbox."
+msgstr "E-mail di conferma inviata. Controlla la casella di posta."
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Fetching e-mail addresses.."
+msgstr "Recupero inditizzi e-mail.."
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "View e-mails"
+msgstr "Visualizza e-mail"
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Add new e-mail"
+msgstr "Aggiungi una nuova e-mail"
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Check your e-mail box to confirm new e-mail address"
+msgstr "Controlla la casella di posta per confermare il nuovo indirizzo e-mail"
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Add new"
+msgstr "Aggiungi nuovo"
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "User e-mails"
+msgstr "E-mail utente"
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Insert new e-mail"
+msgstr "Inserire nuova e-mail."
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Checking e-mail.."
+msgstr "Controllo e-mail.."
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Registering e-mail.."
+msgstr "Registrazione e-mail.."
+
+#: django_sso_app_qcumber_frontend/static/email/js/app.8525e86a.js:1
+msgid "Email"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:7
+msgid "Invalid credentials."
+msgstr "Credenziali errate."
+
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:7
+msgid "Invalid email."
+msgstr "E-mail non valida."
+
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:7
+msgid "Invalid username."
+msgstr "Username non valido."
+
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:7
+msgid "Account not found, please"
+msgstr "Account non trovato,"
+
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:7
+msgid "SIGN UP"
+msgstr "REGISTRATI"
+
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:7
+msgid "E-mail already registered, please"
+msgstr "E-mail gia registrata,"
+
+#: django_sso_app_qcumber_frontend/static/email/js/chunk-vendors.190c23c7.js:7
+msgid "LOGIN"
+msgstr "ACCESSO"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Sign up"
+msgstr "Registrazione"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Reset password"
+msgstr "Reimposta la password"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Insert username or e-mail"
+msgstr "Inserisci username o e-mail"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+msgid "Insert password"
+msgstr "Inserisci la password"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "help"
+msgstr "aiuto"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Checking credentials.."
+msgstr "Controllo credenziali.."
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Logging in.."
+msgstr "Accesso.."
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Enabling services.."
+msgstr "Abilitazione servizi.."
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Checking user.."
+msgstr "Controllo utente.."
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Choose a service"
+msgstr "Scegli un servizio"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Click ACCEPT to accept terms of service"
+msgstr "Clicca ACCETTA per accettare i termini di servizio"
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Subscribing service.."
+msgstr "Iscrizione al servizio.."
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+msgid "Insert username or e-mail. If you have not created an account yet, then please <a href=\"/signup/\" tabindex=\"-1\">SIGN UP</a> first."
+msgstr "Inserisci username o e-mail. Se non hai ancora creato un account <a href=\"/signup/\" tabindex=\"-1\">REGISTRATI</a>."
+
+#: django_sso_app_qcumber_frontend/static/login/js/app.182610a7.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Login"
+msgstr "Accesso"
+
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:1
+msgid "You already unsubscribed from"
+msgstr "Ti sei gia disiscritto da"
+
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:30
+msgid "The e-mail address and/or password you specified are not correct."
+msgstr "L'indirizzo e-mail e/o la password che hai usato non sono corretti."
+
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:30
+msgid "The username and/or password you specified are not correct."
+msgstr "Lo username e/o la password che hai usato non sono corretti."
+
+#: django_sso_app_qcumber_frontend/static/login/js/chunk-vendors.03635eeb.js:30
+msgid "Would you <a href=\"/password/reset/\" alt=\"reset password\" tabindex=\"-1\">RESET YOUR PASSWORD</a>?"
+msgstr "Desideri <a href=\"/password/reset/\" alt=\"reset password\" tabindex=\"-1\">RESETTARE LA PASSWORD</a>?"
+
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Home"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+msgid "Are you sure you want to sign out?"
+msgstr "Sei sicuro di voler uscire?"
+
+#: django_sso_app_qcumber_frontend/static/logout/js/app.7fb7b53d.js:1
+msgid "Logging out.."
+msgstr "Uscita.."
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+msgid "Insert old password"
+msgstr "Inserisci la vecchia password"
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+msgid "Insert a new password"
+msgstr "Inserisci una nuova password"
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Confirm password"
+msgstr "Conferma la password"
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+msgid "Old password"
+msgstr "Vecchia password"
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Checking.."
+msgstr "Controllo.."
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+msgid "Repeat"
+msgstr "Ripeti"
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+msgid "Updating password.."
+msgstr "Aggiornamento password.."
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Password must be at least 8 characters long."
+msgstr "La password deve contenere almeno 8 caratteri."
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Password didn't match."
+msgstr "Le password non coincidono."
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/app.4e1ec6d9.js:1
+msgid "PasswordChange"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/password-change/js/chunk-vendors.d80eb409.js:139
+#: django_sso_app_qcumber_frontend/static/password-set/js/chunk-vendors.293572e1.js:7
+msgid "Check password."
+msgstr "Controlla la password."
+
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Signup"
+msgstr "Registrazione"
+
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Insert e-mail"
+msgstr "Inseririsci e-mail"
+
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+msgid "Click confirmation e-mail"
+msgstr "Clicca sull'e-mail di conferma"
+
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+msgid "Sending password reset e-mail.."
+msgstr "Invio e-mail di reset password.."
+
+#: django_sso_app_qcumber_frontend/static/password-reset/js/app.f419a892.js:1
+msgid "PasswordReset"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/password-set/js/app.2023d186.js:1
+msgid "PasswordSet"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Choose username"
+msgstr "Scegli username"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Insert first name"
+msgstr "Inserisci il nome"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Insert last name"
+msgstr "Inserisci il cognome"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Insert address"
+msgstr "Inserisci la password"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Describe yourself"
+msgstr "Su di te"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Choose picture"
+msgstr "Scegli un'immagine"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "First name"
+msgstr "Nome"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "Last name"
+msgstr "Cognome"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Set your position"
+msgstr "Inserisci la posizione"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "Address"
+msgstr "Indirizzo"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "About you.."
+msgstr "Su di te.."
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Click to choose a picture"
+msgstr "Clicca per scegliere un'immagine"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Updating profile.."
+msgstr "Aggiornamento profilo.."
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Profile successfully created"
+msgstr "Profilo creato con successo"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Already taken"
+msgstr "Già preso"
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Check first name."
+msgstr "Controllare il nome."
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Check last name."
+msgstr "Controllare il cognome."
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "Check address."
+msgstr "Controllare l'indirizzo."
+
+#: django_sso_app_qcumber_frontend/static/profile-complete/js/app.23ed0f91.js:1
+msgid "ProfileComplete"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Choose field"
+msgstr "Scegli un campo"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Update Field"
+msgstr "Modifica il campo"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Cancel"
+msgstr "Annulla"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Update"
+msgstr "Aggiorna"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Profile successfully updated"
+msgstr "Profilo aggiornato con successo"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "Name"
+msgstr "Nome"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "Description"
+msgstr "Descrizione"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "Birthdate"
+msgstr "Data di nascita"
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Invalid first name."
+msgstr "Formato nome errato."
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Invalid last name."
+msgstr "Formato cognome errato."
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "Set position."
+msgstr "Inserisci la posizione."
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/app.9dee9db8.js:1
+msgid "ProfileUpdate"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "E-mail"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/profile-update/js/chunk-vendors.62ad2895.js:207
+msgid "Password"
+msgstr ""
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "Siamo spiacenti, l'iscrizione è attualmente chiusa."
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Insert password (if required)"
+msgstr "Inserisci la password (se richiesto)"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Check your e-mail box"
+msgstr "Controlla la casella e-mail"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Choose one of the following user types"
+msgstr "Scegli una delle seguenti tipologie di utente"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "User type info"
+msgstr "Informazioni tipologia di utente"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Insert e-mail, will be used for later communications"
+msgstr "Inserisci e-mail, verrà usata per comunicazioni future"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Choose a strong password"
+msgstr "Inserisci una password sicura"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Check informations"
+msgstr "Controlla le informazioni"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "Signin up.."
+msgstr "Registrazione.."
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "association"
+msgstr "associazione"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "citizen"
+msgstr "cittadino"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "company"
+msgstr "impresa"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "institution"
+msgstr "istituzione"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "professional"
+msgstr "professionista"
+
+#: django_sso_app_qcumber_frontend/static/signup/js/app.e7126394.js:1
+msgid "school"
+msgstr "scuola"
+
+#: extra
+msgid "already taken, please"
+msgstr "esistente, "

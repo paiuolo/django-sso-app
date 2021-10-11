@@ -1,0 +1,38 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}User: {{ user.username }}{% endblock head_title %}
+
+{% block inner %}
+{% if user.is_authenticated %}
+<h1 xmlns="http://www.w3.org/1999/html">
+    {{ user.username }}
+    </h1>
+
+    <form enctype="multipart/form-data" class="form" method="post" action="{% url 'profile.complete' %}">
+      {% csrf_token %}
+      {{ form.as_table }}
+      <input type="submit">Submit</input>
+    </form>
+{% else %}
+    <h1>
+    {% blocktrans %}You are not logged in.{% endblocktrans %}
+    </h1>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <a class="btn btn-primary" href="{% url 'account_login' %}" role="button">
+            {% trans "Login" %}
+            </a>
+        </div>
+
+        <div class="col-sm-12">
+            <a class="btn btn-primary" href="{% url 'account_signup' %}" role="button">
+            {% trans "Register" %}
+            </a>
+        </div>
+    </div>
+{% endif %}
+{% endblock inner %}

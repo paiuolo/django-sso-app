@@ -1,0 +1,428 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-11 13:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/adapter.py:29 core/api/views.py:271
+#: core/apps/users/tests/test_views.py:394
+msgid "We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes."
+msgstr "Ti abbiamo spedito una e-mail di verifica. Segui il link ricevuto per completare il processo di registrazione. Contattaci se non lo ricevi in pochi minuti."
+
+#: core/api/serializers.py:101
+#, python-format
+msgid "E-mail address not verified: %(value)s"
+msgstr "Indirizzo E-mail non verificato: %(value)s"
+
+#: core/api/views.py:321
+msgid "We have sent an e-mail to you for verification. Please click on the link inside this e-mail. Please contact us if you do not receive it within a few minutes."
+msgstr "Ti abbiamo spedito una e-mail di verifica. Per favore clicca sul link qui contenuto. Contattaci se non lo ricevi in pochi minuti."
+
+#: core/api/views.py:351
+msgid "We have sent you an e-mail. Please contact us if you do not receive it within a few minutes."
+msgstr "Ti abbiamo spedito una e-mail. Ti preghiamo di contattarci se non dovessi riceverla in pochi minuti."
+
+#: core/api/views.py:377
+msgid "The password reset link was invalid, possibly because it has already been used.  Please request a <a href=\"{}\">new password reset</a>."
+msgstr "Il link per l'impostazione della password non è valido, forse è già stato usato.  Per favore richiedi un <a href=\"%(passwd_reset_url)s\">nuovo link</a>."
+
+#: core/api/views.py:404
+msgid "Your password is now changed."
+msgstr "La tua password è stata cambiata."
+
+#: core/api/views.py:436
+msgid "Password updated, <a href='/login/'>LOGIN</a> with new credentials."
+msgstr "Password aggiornata, <a href='/login/'>ACCEDI</a> con le nuove credenziali."
+
+#: core/api/views.py:462
+msgid "Password already set."
+msgstr "La password è già stata impostata."
+
+#: core/api/views.py:471
+msgid "Password successfully set."
+msgstr "Password impostata con successo."
+
+#: core/apps/devices/models.py:17
+msgid "Device"
+msgstr ""
+
+#: core/apps/devices/models.py:23 core/apps/services/models.py:117
+msgid "profile"
+msgstr ""
+
+#: core/apps/devices/models.py:26
+msgid "fingerprint"
+msgstr ""
+
+#: core/apps/devices/models.py:27
+msgid "user agent"
+msgstr ""
+
+#: core/apps/devices/models.py:29
+msgid "apigw_jwt_id"
+msgstr ""
+
+#: core/apps/devices/models.py:30
+msgid "apigw_jwt_key"
+msgstr ""
+
+#: core/apps/devices/models.py:31
+msgid "apigw_jwt_secret"
+msgstr ""
+
+#: core/apps/groups/models.py:34
+msgid "Grouping"
+msgstr ""
+
+#: core/apps/groups/models.py:36 core/apps/services/models.py:24
+msgid "name"
+msgstr "nome"
+
+#: core/apps/groups/models.py:38
+msgid "type"
+msgstr ""
+
+#: core/apps/groups/models.py:39 core/apps/profiles/models.py:61
+msgid "description"
+msgstr "descrizione"
+
+#: core/apps/passepartout/models.py:34
+msgid "Passepartout"
+msgstr ""
+
+#: core/apps/passepartout/models.py:40
+msgid "token"
+msgstr ""
+
+#: core/apps/passepartout/models.py:41
+msgid "jwt"
+msgstr ""
+
+#: core/apps/passepartout/models.py:42
+msgid "device"
+msgstr ""
+
+#: core/apps/passepartout/models.py:43
+msgid "bumps"
+msgstr ""
+
+#: core/apps/profiles/forms.py:26 core/apps/profiles/forms.py:29
+msgid "Social Security Number"
+msgstr "Codice Fiscale"
+
+#: core/apps/profiles/forms.py:32 core/apps/profiles/forms.py:35
+msgid "Phone"
+msgstr "Telefono"
+
+#: core/apps/profiles/forms.py:38 core/apps/profiles/forms.py:41
+msgid "First name"
+msgstr "Nome"
+
+#: core/apps/profiles/forms.py:44 core/apps/profiles/forms.py:47
+msgid "Last name"
+msgstr "Cognome"
+
+#: core/apps/profiles/forms.py:50 core/apps/profiles/forms.py:52
+msgid "Description"
+msgstr "Descrizione"
+
+#: core/apps/profiles/forms.py:56
+msgid "Picture"
+msgstr "Immagine"
+
+#: core/apps/profiles/forms.py:61 core/apps/profiles/forms.py:64
+msgid "Birthdate"
+msgstr "Data di nascita"
+
+#: core/apps/profiles/forms.py:72
+msgid "Country of birth"
+msgstr "Paese"
+
+#: core/apps/profiles/forms.py:74
+msgid "Latitude"
+msgstr "Latitudine"
+
+#: core/apps/profiles/forms.py:76
+msgid "Longitude"
+msgstr "Longitudine"
+
+#: core/apps/profiles/forms.py:85
+msgid "Country"
+msgstr "Paese"
+
+#: core/apps/profiles/forms.py:88 core/apps/profiles/forms.py:90
+msgid "Address"
+msgstr "Indirizzo"
+
+#: core/apps/profiles/forms.py:94 core/apps/profiles/forms.py:97
+msgid "Language"
+msgstr "Lingua"
+
+#: core/apps/profiles/forms.py:100 core/apps/profiles/forms.py:103
+msgid "Gender"
+msgstr ""
+
+#: core/apps/profiles/forms.py:106 core/apps/profiles/forms.py:109
+msgid "Company name"
+msgstr ""
+
+#: core/apps/profiles/models.py:44
+msgid "sso id"
+msgstr ""
+
+#: core/apps/profiles/models.py:45
+msgid "sso revision"
+msgstr ""
+
+#: core/apps/profiles/models.py:47
+msgid "user username"
+msgstr ""
+
+#: core/apps/profiles/models.py:48 core/apps/users/models.py:16
+msgid "email address"
+msgstr "indirizzo E-mail"
+
+#: core/apps/profiles/models.py:50
+msgid "external id"
+msgstr ""
+
+#: core/apps/profiles/models.py:52
+msgid "social security number"
+msgstr ""
+
+#: core/apps/profiles/models.py:53
+msgid "phone"
+msgstr ""
+
+#: core/apps/profiles/models.py:55
+msgid "first name"
+msgstr "nome"
+
+#: core/apps/profiles/models.py:57
+msgid "last name"
+msgstr "cognome"
+
+#: core/apps/profiles/models.py:59
+msgid "alias"
+msgstr ""
+
+#: core/apps/profiles/models.py:62 core/apps/services/models.py:26
+msgid "picture"
+msgstr "immagine"
+
+#: core/apps/profiles/models.py:64
+msgid "birthdate"
+msgstr "data di nascita"
+
+#: core/apps/profiles/models.py:65
+msgid "country of birth"
+msgstr "paese"
+
+#: core/apps/profiles/models.py:67
+msgid "latitude"
+msgstr "latitudine"
+
+#: core/apps/profiles/models.py:68
+msgid "longitude"
+msgstr "longitudine"
+
+#: core/apps/profiles/models.py:72
+msgid "country"
+msgstr "paese"
+
+#: core/apps/profiles/models.py:74
+msgid "address"
+msgstr "indirizzo"
+
+#: core/apps/profiles/models.py:75 core/apps/services/models.py:94
+msgid "language"
+msgstr "lingua"
+
+#: core/apps/profiles/models.py:77
+msgid "gender"
+msgstr ""
+
+#: core/apps/profiles/models.py:79
+msgid "company name"
+msgstr ""
+
+#: core/apps/profiles/models.py:81
+msgid "expiration date"
+msgstr ""
+
+#: core/apps/profiles/models.py:83
+msgid "profile completion date"
+msgstr ""
+
+#: core/apps/profiles/models.py:85
+msgid "unsubscription date"
+msgstr "data di de-registrazione"
+
+#: core/apps/profiles/models.py:87
+msgid "meta"
+msgstr ""
+
+#: core/apps/profiles/models.py:89
+msgid "created by event"
+msgstr ""
+
+#: core/apps/profiles/models.py:103
+msgid "Profile"
+msgstr "Profilo"
+
+#: core/apps/profiles/models.py:107
+msgid "user"
+msgstr ""
+
+#: core/apps/profiles/models.py:110
+msgid "API gateway consumer id"
+msgstr ""
+
+#: core/apps/profiles/models.py:112 core/apps/services/models.py:34
+msgid "groups"
+msgstr ""
+
+#: core/apps/services/models.py:22
+msgid "Service"
+msgstr ""
+
+#: core/apps/services/models.py:25
+msgid "service url"
+msgstr ""
+
+#: core/apps/services/models.py:28
+msgid "cookie domain"
+msgstr ""
+
+#: core/apps/services/models.py:29
+msgid "redirect wait"
+msgstr ""
+
+#: core/apps/services/models.py:31
+msgid "subscription required"
+msgstr ""
+
+#: core/apps/services/models.py:32 core/models.py:52
+msgid "is public"
+msgstr ""
+
+#: core/apps/services/models.py:92
+msgid "TOS"
+msgstr ""
+
+#: core/apps/services/models.py:95
+msgid "text"
+msgstr ""
+
+#: core/apps/services/models.py:98 core/apps/services/models.py:123
+msgid "service"
+msgstr ""
+
+#: core/apps/services/models.py:110
+msgid "Subscription"
+msgstr "Iscrizione"
+
+#: core/apps/services/models.py:125
+msgid "unsubscribed at"
+msgstr ""
+
+#: core/apps/status/models.py:18
+msgid "Status"
+msgstr ""
+
+#: core/apps/users/admin.py:31
+msgid "Permissions"
+msgstr ""
+
+#: core/apps/users/forms.py:16
+msgid "This username has already been taken."
+msgstr "Questo username è già utilizzato."
+
+#: core/apps/users/views.py:171
+msgid "Email already registered."
+msgstr "Email già registrata."
+
+#: core/models.py:21
+msgid "is active"
+msgstr ""
+
+#: core/models.py:28
+msgid "created at"
+msgstr ""
+
+#: core/models.py:37
+msgid "updated at"
+msgstr ""
+
+#: core/models.py:59
+msgid "started at"
+msgstr ""
+
+#: core/models.py:61
+msgid "ended at"
+msgstr ""
+
+#: core/models.py:68
+msgid "Meta"
+msgstr ""
+
+#: core/to_translate.py:4
+msgid "Please Confirm Your E-mail Address"
+msgstr "Conferma il tuo indirizzo E-mail"
+
+#: core/to_translate.py:5
+msgid "E-mail is not verified."
+msgstr "E-mail non verificata."
+
+#: core/tokens/authentication.py:67
+msgid "Authorization header must contain two space-delimited values"
+msgstr ""
+
+#: core/tokens/authentication.py:90
+msgid "Given token not valid for any token type"
+msgstr ""
+
+#: core/tokens/authentication.py:101
+msgid "Token contained no recognizable user identification"
+msgstr ""
+
+#: core/tokens/authentication.py:106
+msgid "User not found"
+msgstr "Utente non trovato"
+
+#: core/tokens/authentication.py:109
+msgid "User is inactive"
+msgstr "Questo utente è disattivato"
+
+#: templates/account/profile.html:26
+msgid "Update"
+msgstr "Aggiorna"
+
+#: templates/account/profile.html:31 templates/account/profile_complete.html:21
+#: templates/account/profile_update.html:21
+msgid "You are not logged in."
+msgstr "Non hai acceduto."
+
+#: templates/account/profile.html:37 templates/account/profile_complete.html:27
+#: templates/account/profile_update.html:27
+msgid "Login"
+msgstr "Accesso"
+
+#: templates/account/profile.html:41 templates/account/profile_complete.html:33
+#: templates/account/profile_update.html:33
+msgid "Register"
+msgstr "Registrazione"

@@ -1,0 +1,47 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{{ user.username }}{% endblock head_title %}
+
+{% block inner %}
+      {% if user.is_authenticated %}
+      {% if user.sso_app_profile.picture %}
+          <img src="{{user.sso_app_profile.picture}}" alt="picture"/>
+      {% endif %}
+      <h1>{{ user.username }}</h1>
+      <br/>
+
+      {% for field in user_fields %}
+        {% with field|first as field_name  %}
+          {% if field_name != 'picture' %}
+          <h3><label>{{ field_name }}:</label> {{ field|last }}</h3>
+          {% endif %}
+        {% endwith %}
+      {% endfor %}
+
+        <div class="control-group">
+            <div class="controls">
+                <a href="{% url 'profile.update' %}" class="btn btn-primary btn-lg float-right">{% trans "Update" %}</a>
+            </div>
+        </div>
+      {% else %}
+      <h1>
+          {% blocktrans %}You are not logged in.{% endblocktrans %}
+      </h1>
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <a class="btn btn-primary" href="{% url 'account_login' %}" role="button">
+            {% trans "Login" %}
+          </a>
+
+          <a class="btn btn-primary" href="{% url 'account_signup' %}" role="button">
+            {% trans "Register" %}
+          </a>
+        </div>
+      </div>
+      {% endif %}
+
+{% endblock inner %}

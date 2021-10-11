@@ -1,0 +1,49 @@
+{% load static i18n %}{% get_current_language as LANGUAGE_CODE %}<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <title>{% block title %}{{ APP_DOMAIN }}{% endblock title %}</title>
+
+    {% block favicon %}<link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">{% endblock favicon %}
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    {% block css %}
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- This file stores project-specific CSS -->
+<link href="{% static 'css/project.css' %}" rel="stylesheet">
+    {% endblock css %}
+
+    {% block extrahead %}
+    {% endblock extrahead %}
+  </head>
+
+  <body>
+    {% block body %}
+
+      {% block content %}
+      {% endblock content %}
+
+      {% block modal %}{% endblock modal %}
+
+      {% block footer %}
+          {% include 'partials/nav_footer.html' %}
+      {% endblock footer %}
+
+    {% endblock body %}
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    {% block javascript %}
+<!-- Bootstrap JS and its dependencies-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- place project specific Javascript in this file -->
+<script src="{% static 'js/project.js' %}"></script>
+<!-- Your stuff: Third-party javascript libraries go here -->
+    {% endblock javascript %}
+  </body>
+</html>
