@@ -6,6 +6,6 @@ codecov>=2.0.0
 
 # Additional test requirements go here
 wheel
-responses==0.14.0
-dateutils==0.6.12
-faker==9.2.0
+responses # ==0.14.0
+dateutils # ==0.6.12
+faker # ==9.2.0
