@@ -173,14 +173,25 @@ def delete_apigw_consumer_acl(consumer_id, group_name):
     logger.info('deleting apigw consumer acl {} for {}'.format(group_name,
                                                                consumer_id))
 
-    url = app_settings.APIGATEWAY_HOST + "/consumers/" + consumer_id + "/acls/" + group_name
+    _consumer_acls_status, consumer_acls = get_apigw_consumer_acls(consumer_id)
 
-    r = requests.delete(url)
+    acl_id = None
+    for acl in consumer_acls['data']:
+        if acl['group'] == group_name:
+            acl_id = acl['id']
 
-    status_code = r.status_code
+    if acl_id is not None:
+        url = app_settings.APIGATEWAY_HOST + "/consumers/" + consumer_id + "/acls/" + acl_id
 
-    logger.info('apigw response ({0}) {1}'.format(status_code, None))
-    return r.status_code, None
+        r = requests.delete(url)
+
+        status_code = r.status_code
+
+        logger.info('apigw response ({0}) {1}'.format(status_code, None))
+        return r.status_code, None
+
+    else:
+        logger.warning('ACL "{}" not found'.format(group_name))
 
 
 def add_apigw_consumer_to_groups_acls(consumer_id, group_names):

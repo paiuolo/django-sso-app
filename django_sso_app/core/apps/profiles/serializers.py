@@ -51,7 +51,8 @@ class ProfileSerializer(AbsoluteUrlSerializer):
 
     is_incomplete = serializers.SerializerMethodField(required=False)
     required_fields = serializers.SerializerMethodField(required=False)
-    completed_at = serializers.BooleanField(required=False)
+
+    completed_at = serializers.DateTimeField()
 
     company_name = serializers.CharField(required='company_name' in app_settings.REQUIRED_PROFILE_FIELDS)
 
