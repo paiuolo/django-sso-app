@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals, absolute_import
 
+from django.conf import settings
 from django.conf.urls import url
+from django.urls import include
 from django.contrib import admin
 from django.contrib.auth.decorators import login_required
 
@@ -21,11 +23,15 @@ js_info_dict = {}
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    #url(r'^', include('django_sso_app.urls', namespace='django_sso_app')),
 
     url(r'^jsi18n/$', last_modified(lambda req, **kw: last_modified_date)(JavaScriptCatalog.as_view()), js_info_dict,
         name='javascript-catalog'),
+]
 
+if settings.DJANGO_DEBUG_TOOLBAR_ENABLED:
+    urlpatterns.append(url(r'^__debug__/', include('debug_toolbar.urls')))
+
+urlpatterns += [
     url(r'^$', login_required(home), name='home'),
 ]
 

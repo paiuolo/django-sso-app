@@ -1,5 +1,5 @@
 # Additional test requirements go here
-django<3.0  # pyup: < 3.0  # https://www.djangoproject.com/
+django<4.0  # pyup: < 4.0  # https://www.djangoproject.com/
 django-environ==0.7.0  # https://github.com/joke2k/django-environ
 django-allauth==0.45.0  # https://github.com/pennersr/django-allauth
 django-countries==7.2.1 # https://github.com/SmileyChris/django-countries

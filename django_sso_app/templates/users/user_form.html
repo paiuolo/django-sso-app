@@ -4,26 +4,22 @@
 {% block title %}{{ user.username }}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
+<div>
+  <div>
 
   <h1>{{ user.username }}</h1>
 
   {% comment %}
-  <form class="form-horizontal" method="post" action="{% url 'users:update' %}">
+  <form method="post" action="{% url 'users:update' %}">
     {% csrf_token %}
     {{ form|crispy }}
 
-    <div class="control-group">
-      <div class="controls">
-        <button type="submit" class="btn btn-primary">Update</button>
-      </div>
+    <div>
+        <button type="submit">Update</button>
     </div>
   </form>
   {% endcomment %}
 
-      </div>
-    </div>
   </div>
+</div>
 {% endblock %}

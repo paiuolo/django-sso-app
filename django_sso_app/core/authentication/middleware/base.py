@@ -16,7 +16,7 @@ logger = logging.getLogger('django_sso_app')
 ADMIN_URL = '/{}'.format(getattr(settings, 'ADMIN_URL', 'admin/'))
 PROFILE_INCOMPLETE_ENABLED_PATHS = [
     reverse('javascript-catalog'),
-    reverse('profile.complete')
+    reverse('profile.complete'),
 ]
 USER_TO_SUBSCRIBE_ENABLED_PATHS = PROFILE_INCOMPLETE_ENABLED_PATHS
 
@@ -62,6 +62,7 @@ class DjangoSsoAppAuthenticationBaseMiddleware(MiddlewareMixin):
                 not (request_path.startswith('/logout/')) and \
                 not (request_path.startswith('/password/reset/')) and \
                 not (request_path.startswith('/confirm-email/')) and \
+                not (request_path.startswith('/__debug__/')) and \
                 not (request_path.startswith('/api/v1/'))  # keep api endpoints enabled
 
     @staticmethod

@@ -20,6 +20,7 @@ SECRET_KEY = 'yu)@c*j=6m7@o2u+!ln@=-o1n@=vl@f%rb@7!o0p5e=-1qt!a+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+DJANGO_DEBUG_TOOLBAR_ENABLED = False
 
 ALLOWED_HOSTS = []
 
@@ -36,24 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'rest_framework',
-    'rest_framework.authtoken',
-
-    'django_sso_app',
 
     'tests',
 
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-
-    'django_countries',
-    'django_filters',
-
-    'treebeard',
-
     # if your app has other dependencies that need to be added to the site
     # they should be added here
-]
+] + DJANGO_SSO_APP_DJANGO_APPS
+
+if DJANGO_DEBUG_TOOLBAR_ENABLED:
+    INSTALLED_APPS.append('debug_toolbar')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -70,6 +62,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+if DJANGO_DEBUG_TOOLBAR_ENABLED:
+    MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 
 ROOT_URLCONF = 'tests.urls'
 
@@ -101,13 +96,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
 }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
+AUTH_PASSWORD_VALIDATORS = []
+"""
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
@@ -120,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
-]
+]"""
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
@@ -176,3 +172,38 @@ SITE_ID = 1
 EMAIL_BACKEND = env(
     'DJANGO_EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend'
 )
+
+if DJANGO_DEBUG_TOOLBAR_ENABLED:
+    import os  # only if you haven't already imported this
+    import socket  # only if you haven't already imported this
+    hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+    INTERNAL_IPS = [ip[: ip.rfind(".")] + ".1" for ip in ips] + ["127.0.0.1"]
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
+            'datefmt': "%d/%b/%Y %H:%M:%S"
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'propagate': True,
+            'level': 'INFO',
+        },
+    }
+}

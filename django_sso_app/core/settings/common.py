@@ -39,7 +39,7 @@ DJANGO_SSO_APP_BASE_DJANGO_APPS = [
     'django_sso_app',
 ]
 
-DJANGO_SSO_APP_DJANGO_APPS = [
+DJANGO_SSO_APP_DJANGO_APPS = DJANGO_SSO_APP_BASE_DJANGO_APPS + [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -48,9 +48,8 @@ DJANGO_SSO_APP_DJANGO_APPS = [
 
     'django_countries',
 
-    'treebeard'
-
-] + DJANGO_SSO_APP_BASE_DJANGO_APPS
+    'treebeard',
+]
 
 if 'google' in DJANGO_SSO_APP_SOCIALACCOUNT_PROVIDERS:
     DJANGO_SSO_APP_DJANGO_APPS += [
