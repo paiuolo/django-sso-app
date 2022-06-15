@@ -7,6 +7,7 @@ from django.urls import reverse
 from rest_framework import status
 
 from django_sso_app.core.tests.factories import UserTestCase
+from django_sso_app import app_settings
 
 User = get_user_model()
 
@@ -92,8 +93,12 @@ class TestProfileUpdate(UserTestCase):
 
         # print('\nRISPOSTA, user rev', self.profile.sso_rev, '\n\nTOKEN', jwt_cookie)
 
-        unverified_payload = jwt.decode(jwt_cookie, None, False)
-        unverified_payload2 = jwt.decode(jwt_cookie2, None, False)
+        unverified_payload = jwt.decode(jwt_cookie, None,
+                                        options={"verify_signature": False},
+                                        algorithms=[app_settings.JWT_ALGORITHM])
+        unverified_payload2 = jwt.decode(jwt_cookie2, None,
+                                         options={"verify_signature": False},
+                                         algorithms=[app_settings.JWT_ALGORITHM])
 
         self.assertEqual(unverified_payload2.get('sso_rev'), unverified_payload.get('sso_rev') + 1,
                          'rev not incremented in cookie')

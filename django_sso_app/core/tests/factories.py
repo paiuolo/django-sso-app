@@ -281,7 +281,7 @@ class UserTestCase(TestCase):
         return jwt.encode(
             device.get_jwt_payload(),
             secret,
-            app_settings.JWT_ALGORITHM).decode('utf-8')
+            app_settings.JWT_ALGORITHM)
 
     def _get_jwt_cookie(self, device, secret=None):
         from django_sso_app import app_settings
@@ -312,7 +312,7 @@ class UserTestCase(TestCase):
             valid_new_profile_jwt_payload,
             secret,
             app_settings.JWT_ALGORITHM
-        ).decode('utf-8')
+        )
 
     def _get_valid_jwt_cookie(self, sso_id=None, sso_rev=None, fingerprint=None, secret=None):
         from django_sso_app import app_settings

@@ -13,7 +13,7 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 
-from allauth.account.views import INTERNAL_RESET_URL_KEY, INTERNAL_RESET_SESSION_KEY
+from allauth.account.views import INTERNAL_RESET_SESSION_KEY
 from allauth.account.forms import UserTokenForm
 from allauth.utils import get_request_param
 from allauth.account.adapter import get_adapter
@@ -395,9 +395,10 @@ class PasswordResetFromKeyView(DjangoSsoAppApiViewMixin, django_sso_app_views.Pa
 
             set_session_key(request, INTERNAL_RESET_SESSION_KEY, key)
 
-            _response = super(PasswordResetFromKeyView, self).post(request, uidb36, INTERNAL_RESET_URL_KEY, **kwargs)
+            _response = super(PasswordResetFromKeyView, self).post(request, uidb36, key, **kwargs)
 
         except:
+            logger.exception('Error while resetting password form key')
             return self.get_error_response()
 
         else:

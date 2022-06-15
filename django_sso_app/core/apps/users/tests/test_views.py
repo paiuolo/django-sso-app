@@ -247,7 +247,9 @@ class TestUserUpdate(UserTestCase):
 
         self.assertIsNotNone(jwt_cookie, 'no jwt cookie set')
 
-        unverified_payload = jwt.decode(jwt_cookie, None, False)
+        unverified_payload = jwt.decode(jwt_cookie, None,
+                                        options={"verify_signature": False},
+                                        algorithms=[app_settings.JWT_ALGORITHM])
 
         updated_pass = self._get_random_pass()
 
@@ -279,7 +281,9 @@ class TestUserUpdate(UserTestCase):
         self.assertEqual(response3.status_code, 200, 'unable to login with new password')
 
         jwt_cookie3 = self._get_response_jwt_cookie(response3)
-        unverified_payload3 = jwt.decode(jwt_cookie3, None, False)
+        unverified_payload3 = jwt.decode(jwt_cookie3, None,
+                                         options={"verify_signature": False},
+                                         algorithms=[app_settings.JWT_ALGORITHM])
 
         self.assertGreater(unverified_payload3.get('sso_rev'), unverified_payload.get('sso_rev'),
                            'rev not incremented after pass update')
@@ -303,7 +307,9 @@ class TestUserUpdate(UserTestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         received_jwt = self._get_response_jwt_cookie(response)
-        unverified_payload = jwt.decode(received_jwt, None, False)
+        unverified_payload = jwt.decode(received_jwt, None,
+                                        options={"verify_signature": False},
+                                        algorithms=[app_settings.JWT_ALGORITHM])
 
         self.assertEqual(response.data['token'], received_jwt, 'jwt differs between cookie and response')
 
@@ -343,7 +349,9 @@ class TestUserUpdate(UserTestCase):
         self.assertEqual(response3.status_code, 200, 'unable to login with new password')
 
         jwt_cookie3 = self._get_response_jwt_cookie(response3)
-        unverified_payload3 = jwt.decode(jwt_cookie3, None, False)
+        unverified_payload3 = jwt.decode(jwt_cookie3, None,
+                                         options={"verify_signature": False},
+                                         algorithms=[app_settings.JWT_ALGORITHM])
 
         self.assertGreater(unverified_payload3.get('sso_rev'), unverified_payload.get('sso_rev'),
                            'rev not increased after pass update')

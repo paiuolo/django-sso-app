@@ -4,6 +4,7 @@ import jwt
 from django.urls import reverse
 from rest_framework import status
 
+from .... import app_settings
 from ...users.tests.test_views import UserTestCase
 from ..models import Service
 
@@ -172,7 +173,9 @@ class TestServices(UserTestCase):
 
         jwt_cookie2 = self._get_response_jwt_cookie(response)
 
-        unverified_payload2 = jwt.decode(jwt_cookie2, None, False)
+        unverified_payload2 = jwt.decode(jwt_cookie2, None,
+                                         options={"verify_signature": False},
+                                         algorithms=[app_settings.JWT_ALGORITHM])
 
         self.assertEqual(unverified_payload2.get('sso_rev'), second_rev, 'cookie rev NOT changed after login')
 
@@ -218,7 +221,9 @@ class TestServices(UserTestCase):
         jwt_cookie = self._get_response_jwt_cookie(response2)
         self.assertIsNotNone(jwt_cookie, 'no new jwt received')
 
-        unverified_payload = jwt.decode(jwt_cookie, None, False)
+        unverified_payload = jwt.decode(jwt_cookie, None,
+                                        options={"verify_signature": False},
+                                        algorithms=[app_settings.JWT_ALGORITHM])
 
         self.assertEqual(unverified_payload.get('sso_rev'), second_rev, 'rev NOT updated in JWT')
 

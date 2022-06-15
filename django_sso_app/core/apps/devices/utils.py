@@ -104,7 +104,9 @@ def get_or_create_request_device(request):
 def renew_response_jwt(received_jwt, user, request, response):
     logger.debug('renewing response jwt for "{}"'.format(user))
 
-    unverified_payload = jwt.decode(received_jwt, None, False)
+    unverified_payload = jwt.decode(received_jwt, None,
+                                    options={"verify_signature": False},
+                                    algorithms=[app_settings.JWT_ALGORITHM])
     jwt_fingerprint = unverified_payload['fp']
 
     logger.info('Updating response JWT for User {0} with fingerprint {1}'.format(request.user, jwt_fingerprint))

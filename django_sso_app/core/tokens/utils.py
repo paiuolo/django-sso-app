@@ -72,26 +72,30 @@ def get_request_jwt_fingerprint(request):
     if received_jwt is None:
         raise KeyError('No token specified')
 
-    unverified_payload = jwt.decode(received_jwt, None, False)
+    unverified_payload = jwt.decode(received_jwt, None,
+                                    options={"verify_signature": False},
+                                    algorithms=[app_settings.JWT_ALGORITHM])
     return unverified_payload.get('fp')
 
 
 def jwt_decode_handler(token, secret_key, issuer, verify=True):
     # get user from token, BEFORE verification, to get user secret key
 
-    unverified_payload = jwt.decode(token, None, False)
+    unverified_payload = jwt.decode(token, None,
+                                    options={"verify_signature": False},
+                                    algorithms=[app_settings.JWT_ALGORITHM])
 
     if not verify:
         return unverified_payload
 
     options = {
         'verify_exp': False,
+        'verify_signature': verify
     }
 
     return jwt.decode(
         token,
         secret_key,
-        verify,
         options=options,
         #leeway=api_settings.JWT_LEEWAY,
         #audience=api_settings.JWT_AUDIENCE,
@@ -105,7 +109,7 @@ def jwt_encode_handler(payload, secret_key):
         payload,
         secret_key,
         app_settings.JWT_ALGORITHM
-    ).decode('utf-8')
+    )
 
 
 def jwt_encode(payload, secret):
@@ -117,7 +121,9 @@ def jwt_decode(raw_token, verify=True):
         from ..apps.devices.models import Device
 
         logger.debug('decode backend jwt')
-        unverified_payload = jwt.decode(raw_token, None, False)
+        unverified_payload = jwt.decode(raw_token, None,
+                                        options={"verify_signature": False},
+                                        algorithms=[app_settings.JWT_ALGORITHM])
 
         try:
             device_id = unverified_payload['id']
